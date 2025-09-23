@@ -4,25 +4,25 @@ import Login from "./Forms/Login";
 import Object from "./Forms/Object";
 import Register from "./Forms/Register";
 import LandingPage from "./page/LandingPage";
+import { useState } from "react";
 
 
 function App() {
 
-  let customer = true;
+  let [customer, setCustomer] = useState(true)
 
   function changeBtn(){
-       customer = false
-       console.log(customer)
+      setCustomer(false);
   }
 
   return (
     <>
-      {/* <LandingPage /> */}
+      <LandingPage />
       {/* <h1>{customer ? <Login /> : <Register />}</h1>
-      <button onChange={changeBtn}>click to change</button> */}
-      <Array />
+      <button onClick={changeBtn}>click to change</button> */}
+      {/* <Array />
       <Object />
-      <ArrayOfObj />
+      <ArrayOfObj /> */}
     </>
   )
 }
