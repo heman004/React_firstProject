@@ -10,8 +10,8 @@ const ArrayOfObj = () => {
     return(
        <>
        <div className="p-15">
+         <h2 className="bg-black p-5 text-center text-white font-extrabold text-2xl">Array of Object Rendering</h2>
        <div className=" text-center p-5 bg-cyan-400 text-2xl font-bold text-gray-900">
-         <h2>Array of Object Rendering</h2>
          <ul>
             {arr.map( (arr, i) => (
                 <li key={i}>{arr.sub} - {arr.year}</li>

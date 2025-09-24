@@ -6,7 +6,7 @@ const Object = () => {
     return(
         <>
         <div className="p-15">
-          <h2>Object Rendering</h2>
+          <h2 className="bg-black p-5 text-center text-white font-extrabold text-2xl">Object Rendering</h2>
         <div className="bg-fuchsia-600 text-center font-bold text-2xl p-5 text-fuchsia-300">
 
           <h3>subject: {obj.sub}</h3>
