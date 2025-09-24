@@ -9,6 +9,8 @@ const ArrayOfObj = () => {
 
     return(
        <>
+       <div className="p-15">
+       <div className=" text-center p-5 bg-cyan-400 text-2xl font-bold text-gray-900">
          <h2>Array of Object Rendering</h2>
          <ul>
             {arr.map( (arr, i) => (
@@ -24,6 +26,8 @@ const ArrayOfObj = () => {
          {arr.map( ({id, year}) => (
             <h3 key={id}>year: {year}</h3>
          ) ) }
+        </div>  
+        </div>
        </>
     )
 }

@@ -6,8 +6,6 @@ import Navbar from "../components/Navbar";
 function LandingPage() {
     return (
         <>
-          <Navbar />
-          <Banner />
           <MultiCard />
           <Footer />
         </>

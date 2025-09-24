@@ -1,9 +1,12 @@
+import Navbar from "./Navbar";
+import "../App.css"
 const Banner = () => {
     return(
         <>
-        <div className = "image">
+        
+        <div className = "image ">
           <img src="./public/images/two.png" alt="" />
-          </div>
+        </div>
         </>
     )
 }
