@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Useeffecthook from "./Useeffecthook";
 
 const Usestatehook = () => {
   const [count, setCount] = useState(1);
@@ -136,6 +137,7 @@ const Usestatehook = () => {
           </div>
         </div>
       </div>
+      <Useeffecthook />
     </>
   );
 };
