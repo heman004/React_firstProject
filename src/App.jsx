@@ -20,6 +20,7 @@ function App() {
            <Route  path="/component" element={<LandingPage />} />
            <Route path="/rendering" element={<Formlanding />} />
            <Route path="/hooks" element={ <Usestatehook /> } />
+           <Route path="/card" element={ <Card /> } />
          </Routes>
       </Router>
     </>

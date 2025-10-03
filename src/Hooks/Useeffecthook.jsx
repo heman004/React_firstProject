@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 const Useeffecthook = () => {
   const [timing, setTiming] = useState(0);
   const [timer, setTimer] = useState(false);
-  const [fet, setFet] = useState([])
 
      const changeTime = (seconds) => {
       const hours = Math.floor(seconds / 3600);
@@ -24,17 +23,6 @@ const Useeffecthook = () => {
   }, [timer] )
 
 
-
-  const fetching = async() => {
-      const data = await fetch("https://dummyjson.com/quotes");
-      const datas = await data.json();
-      console.log(datas)
-      setFet(datas.quotes)
-  }
-
-  useEffect( () => {
-    fetching()
-  }, [] )
 
   return (
     <>
@@ -57,17 +45,8 @@ const Useeffecthook = () => {
         </div>
       </div>
 
-        <div className="p-30">
-        <div className="bg-black p-10 ">
-          <h2 className="text-7xl text-white font-extrabold text-center pb-10">Fetch API</h2>
-        {fet.slice(0, 10).map( (e, i) => (
-          <div key={e.id ?? i} className="flex justify-between items-center p-2">
-            <h2 className="bg-orange-700 p-4 text-white font-bold"> {e.quote} </h2>
-            <h2 className="bg-amber-600 p-4 text-white font-bold"> {e.author} </h2>
-            </div>
-        ) )}
-        </div>
-        </div> 
+
+
 
     </>
   );
